@@ -11,6 +11,8 @@ import {
 } from "@/components/page-header"
 import { buttonVariants } from "@/registry/new-york/ui/button"
 import { Separator } from "@/registry/new-york/ui/separator"
+import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
 
 export const metadata: Metadata = {
   title: "Examples",
@@ -24,6 +26,8 @@ interface ExamplesLayoutProps {
 export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
   return (
     <>
+    <div className="relative flex min-h-screen flex-col">
+    <SiteHeader />
       <div className="container relative">
         <PageHeader className="page-header pb-8">
           <Link
@@ -70,6 +74,8 @@ export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
           </div>
         </section>
       </div>
+    <SiteFooter />
+    </div>
     </>
   )
 }

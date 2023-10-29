@@ -13,13 +13,11 @@ import { ThemeSwitcher } from "@/components/theme-switcher"
 import { Toaster as DefaultToaster } from "@/registry/default/ui/toaster"
 import { Toaster as NewYorkToaster } from "@/registry/new-york/ui/toaster"
 
-
-
-interface MarketingLayoutProps {
+interface ThemesLayoutProps {
   children: React.ReactNode
 }
 
-export default function MarketingLayout({ children }: MarketingLayoutProps) {
+export default function ThemesLayout({ children }: ThemesLayoutProps) {
   return (
     <>
       <html lang="en" suppressHydrationWarning>
