@@ -1,12 +1,12 @@
 export const siteConfig = {
-  name: "shadcn/ui",
+  name: "jeremy",
   url: "https://ui.shadcn.com",
   ogImage: "https://ui.shadcn.com/og.jpg",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "Work, life, and fun.",
   links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn-ui/ui",
+    twitter: "https://twitter.com/jeremywblack",
+    github: "https://github.com/jeremyblack",
   },
 }
 
