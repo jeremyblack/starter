@@ -2,9 +2,11 @@ import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
+import { CommandMenu } from "@/components/command-menu"
 import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/main-nav"
 import { MobileNav } from "@/components/mobile-nav"
+import { ModeToggle } from "@/components/mode-toggle"
 import { buttonVariants } from "@/registry/new-york/ui/button"
 
 export function SiteHeader() {
@@ -14,7 +16,10 @@ export function SiteHeader() {
         <MainNav />
         <MobileNav />
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
-          <nav className="flex items-center gap-2">
+          <div className="w-full flex-1 md:w-auto md:flex-none">
+            <CommandMenu />
+          </div>
+          <nav className="flex items-center">
             <Link
               href={siteConfig.links.github}
               target="_blank"
