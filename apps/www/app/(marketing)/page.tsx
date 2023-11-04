@@ -13,7 +13,7 @@ import {
 } from "@/components/page-header"
 import { buttonVariants } from "@/registry/new-york/ui/button"
 import { Separator } from "@/registry/new-york/ui/separator"
-import DashboardPage from "@/app/examples/dashboard/page"
+import DashboardPage from "@/app/(marketing)/(examples)/dashboard/page"
 
 export default function IndexPage() {
   return (

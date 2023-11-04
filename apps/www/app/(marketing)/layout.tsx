@@ -21,7 +21,6 @@ interface MarketingLayoutProps {
 
 export default function MarketingLayout({ children }: MarketingLayoutProps) {
   return (
-    <>
       <html lang="en" suppressHydrationWarning>
         <head />
         <body
@@ -49,6 +48,5 @@ export default function MarketingLayout({ children }: MarketingLayoutProps) {
           <DefaultToaster />
         </body>
       </html>
-    </>
   )
 }
